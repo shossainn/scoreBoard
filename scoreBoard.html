@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="scoreBoard.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h3 id="home-title">HOME</h3>
+        <h4 id="home-score"></h4>
+        <h5>
+          <button onClick="onePoint()">+1</button>
+          <button onClick="twoPoint()">+2</button>
+          <button onClick="threePoint()">+3</button>
+          <p id="scoredMsg"></p>
+        </h5>
+      </div>
+      <div>
+        <h3 id="guest-title">GUEST</h3>
+        <h4 id="away-score"></h4>
+        <h5>
+          <button onClick="awayOnePoint()">+1</button>
+          <button onClick="awayTwoPoint()">+2</button>
+          <button onClick="awayThreePoint()">+3</button>
+          <p id="scoredAwayMsg"></p>
+        </h5>
+      </div>
+    </div>
+
+    <div>
+      <h3><button onclick="reset()">RESET</button></h3>
+    </div>
+    <script src="scoreBoard.js"></script>
+  </body>
+</html>
